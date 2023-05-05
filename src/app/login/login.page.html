@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="login()">
+    <ion-item>
+      <ion-label position="floating">Usuário</ion-label>
+      <ion-input type="text" [(ngModel)]="username" name="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+    </ion-item>
+    <ion-button expand="block" type="submit">Entrar</ion-button>
+  </form>
+  <ion-router-link routerLink="/tab2">Minha Nova Página</ion-router-link>
+ 
+</ion-content>
